@@ -1,13 +1,13 @@
 ---
 title: About me
 layout: page
-comments: yes
+comments: no
 ---
   
-卢克进, 08年毕业于南京理工大学计算机学院.      
-熟练使用常见的计算机语言.      
-目前从事Mac,iOS开发相关工作.      
+lafmad, 漫游者
+认真生活，认真思考    
+找寻有意义的生活，找寻爱与自由     
 
-个人邮箱:kejinlu@gmail.com      
-新浪微博: [http://weibo.com/kejinlu](http://weibo.com/kejinlu)      
-github : [https://github.com/kejinlu](https://github.com/kejinlu)      
+个人邮箱:inaircastel@gmail.com      
+新浪微博: [http://weibo.com/lafmad](http://weibo.com/lafmad)      
+github : [https://github.com/lafmad](https://github.com/lafmad)      
