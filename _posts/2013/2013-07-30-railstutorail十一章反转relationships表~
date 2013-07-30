@@ -1,0 +1,21 @@
+---
+layout: post
+title: 第十一章 外键 及 反转relationships表
+categories:
+- rails
+tags:
+- railstutorail 学习笔记
+---
+
+不知道谁学到11章时和我一样困惑的，所谓的对调两列的位置，组建成reverse_ralationships表究竟是什么意思。毕竟表根本没变还是原来那个表阿，携带信息完全一样。
+
+其实表还是原来的表，根本没变。只是为了另设外键，把表重命了个名而已。根本就没有任何将表进行反转的处理。
+
+先说外键，user.microposts, 控制台运行 User.first.microposts.build初始化 无须指定外键，因为micopost 模型中就是user_id，使用User.first.microposts.build时，rails 会自动将micropost中的user_id赋值为user.id
+console中
+'1.9.3-p429 :001 > User.first.microposts.build`
+  User Load (0.3ms)  SELECT "users".* FROM "users" LIMIT 1
+ => #<Micropost id: nil, content: nil, user_id: 1, created_at: nil, updated_at: nil> 
+
+而User表和relationship表必须通过外键一一对应。指定的是follower_id后，那么 user.relationships.build(followed_id: ...)建立relationship时，follower_id 会被赋值 user.id，而followed_id是你给的参数。通过has_many:followeds,through: :relationships,可以使用followe_id 生成 user.followeds 数组。
+

@@ -23,7 +23,7 @@ tags:
 
 语言和编程，被当作新生的稻草了，这次动力应该会可靠一点，既然发现人要很努力很努力才能活的不那么难堪。至少充实点了，陷在新知识的泥潭里理解概念解决问题，就没空在情绪的波动中玩肯定否定的游戏了。
 
-ps不要再羡慕那些早早知道自己想要什么在干什么的人，一个人一个命，踏实点吧。
+ps不要再羡慕那些早早知道自己想要什么在干什么的人，一个人一个命，急不来。
     
 
 
@@ -36,7 +36,7 @@ ps不要再羡慕那些早早知道自己想要什么在干什么的人，一个
 
 ps：我照虎画的猫在<http://twitterlafmad.herokuapp.com>,（主页图片来自<http://www.dandyweng.com/> 已获作者微薄同意使用。本想分析借鉴他的页面的，但发现超出自己目前能力,ps他才十几岁，是homelearner，sigh！）
 
-正试着添加功能。昨天初步搞定回复功能（完全仿照书中用户发微薄的模式），显示楼层也有了（以非常丑陋的代码写在视图中，求[高手指点]()）
+正试着添加功能。昨天初步搞定回复功能（完全仿照书中用户发微薄的模式），显示楼层也有了（以非常丑陋的代码写在视图中，望[指点](http://ruby-china.org/topics/12916)）
 
 
 #入门轨迹及资源，供其他菜鸟入门参考
@@ -96,18 +96,18 @@ js前几天看到一个网页[学习JavaScript的最佳方法](http://article.ye
 
 #4.ruby 
 
-感觉rails主要是记惯例，记用法,先花两天把ruby过一遍书大致知道有些什么东西，碰到了再查书吧，比如教程里正则表达式匹配emails时。
+感觉rails主要是记惯例，记用法，先花两天把ruby书过一遍大致知道有些什么东西，碰到了再查书吧，比如教程里正则表达式匹配emails时。
 
 ***
 
 #5.git，github，heroku
 
-git :吃一次大亏就长记性了，有一天没注意，commit没push出去不知道，导致两天弄的全部白费。网上看到有详细教程，常用的命令和分支够用，暂时满足于这篇介绍[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html).
+git:  吃一次大亏就长记性了，有一天没注意，commit没push出去不知道，导致两天弄的全部白费。网上看到有详细教程，常用的命令和分支够用，暂时满足于这篇介绍[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html).
 
 heroku:  我遇到的问题是GFW, 开始部署不成功，以为是数据库问题，折腾到最后发现是[GFW问题](http://ruby-china.org/topics/10813),解决完按照railsturoial书上命令就部署好了。
 
 
-github page:最初是看到[理想的写作环境：Git+Github+Markdown+Jekyll](http://www.yangzhiping.com/tech/writing-space.html)，觉得挺好玩的（也因此接触到ruby，进而自学rails），具体是按这个[写作环境搭建(git+github+markdown+jekyll)](http://site.douban.com/196781/widget/notes/12161495/note/264946576/)。用记事本加markdown写东西推送干净清爽，还带版本控制。由于老在断网环境下写东西，所以简书暂时用不上。
+github page: 最初是看到[理想的写作环境：Git+Github+Markdown+Jekyll](http://www.yangzhiping.com/tech/writing-space.html)，觉得挺好玩的（也因此接触到ruby，进而自学rails），具体是按这个[写作环境搭建(git+github+markdown+jekyll)](http://site.douban.com/196781/widget/notes/12161495/note/264946576/)。用记事本加markdown写东西推送干净清爽，还带版本控制。由于老在断网环境下写东西，所以简书暂时用不上。
 
 ***
 # 6. 概念
@@ -123,6 +123,9 @@ MVC
 RESTful
 框架：[框架是什么呢？我来这样做个定义：框架是一系列代码库以及数据结构的集合，提供一些公共的功能支持。人们可以在框架的基础上扩展和延伸实现更丰富的功能。框架和代码库还有本质的区别，开发框架大都集成了程序流程控制以及异常处理的能力，而这是代码库一般不具备的。代码库一般来说与你的交互只限于你请求，他响应的层面上。](http://blog.csdn.net/abbuggy/article/details/7396780)
 
+
+****
+以上
     
 
 
