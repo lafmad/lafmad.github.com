@@ -16,9 +16,13 @@ tags:
 ###第十章的user.microposts比较简单, 生成micropost时无须指定外键，因为micopost 模型中就是user_id，只要正确定义了用户和微博之间的关联关系（has_many,belongs_to）,使用user.microposts.build创建新微薄时，rails 会自动将micropost中的user_id赋值为相应的user.id。
 
 >运行验证一下，rails console --sandbox:
+
 >`1.9.3-p429 :001 > User.first.microposts.build`
+
 >会新建一个micropost，micropost的user_id属性 自动赋值为 user.id （此例为User.first.id, "1"），其他属性为nil,待给参数
+
 >`User Load (0.5ms)  SELECT "users".* FROM "users" LIMIT 1`
+
 >`=> #<Micropost id: nil, content: nil, user_id: 1, created_at: nil, updated_at: nil> `
 
 

@@ -15,25 +15,21 @@ tags:
 
 ###第十章的user.microposts比较简单, 生成micropost时无须指定外键，因为micopost 模型中就是user_id，只要正确定义了用户和微博之间的关联关系（has_many,belongs_to）,使用user.microposts.build创建新微薄时，rails 会自动将micropost中的user_id赋值为相应的user.id。
 
->运行验证一下，rails console --sandbox:
-
->`1.9.3-p429 :001 > User.first.microposts.build`
-
->会新建一个micropost，micropost的user_id属性 自动赋值为 user.id （此例为User.first.id, "1"），其他属性为nil,待给参数
-
->`User Load (0.5ms)  SELECT "users".* FROM "users" LIMIT 1`
-
->`=> #<Micropost id: nil, content: nil, user_id: 1, created_at: nil, updated_at: nil> `
+>运行验证一下，rails console --sandbox:   
+`1.9.3-p429 :001 > User.first.microposts.build`   
+会新建一个micropost，micropost的user_id属性 自动赋值为 user.id （此例为User.first.id, "1"），其他属性为nil,待给参数  
+`User Load (0.5ms)  SELECT "users".* FROM "users" LIMIT 1`   
+`=> #<Micropost id: nil, content: nil, user_id: 1, created_at: nil, updated_at: nil> `   
 
 
 ###而relationship表中没有叫user_id 的，只有对应User的follower_id和followed_id,所以User表必须通过指定的外键和relationship表一一对应。
 书中先指定的外键是follower_id（*你完全可以先指定followed_id*），那么使用 user.relationships.build(followed_id: ...)建立relationship时，被设为外键的follower_id 会被自动赋对应的 user.id值，而followed_id是你给的参数，从而得到relationship表中的一行具体的relationship
 ***
->`1.9.3-p429 :002 > User.first.relationships`
->会列出 User.first 的所有的 follower_id =1的 relationships表
->`User Load (0.4ms)  SELECT "users".* FROM "users" LIMIT 1`
->`Relationship Load (46.7ms)  SELECT "relationships".* FROM "relationships" WHERE "relationships"."follower_id" = 1`
->`=> [#<Relationship id: 21, follower_id: 1, followed_id: 2, created_at: "2013-07-21 13:52:10", updated_at: "2013-07-21 13:52:10">]`
+>`1.9.3-p429 :002 > User.first.relationships`   
+会列出 User.first 的所有的 follower_id =1的 relationships表   
+`User Load (0.4ms)  SELECT "users".* FROM "users" LIMIT 1`   
+`Relationship Load (46.7ms)  SELECT "relationships".* FROM "relationships" WHERE "relationships"."follower_id" = 1`   
+`=> [#<Relationship id: 21, follower_id: 1, followed_id: 2, created_at: "2013-07-21 13:52:10", updated_at: "2013-07-21 13:52:10">]`  
 ****
 
 >`1.9.3-p429 :003 > User.first.relationships.build`
