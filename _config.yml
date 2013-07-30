@@ -1,6 +1,5 @@
 markdown: rdiscount
-permalink: /:year/:month/:title/
-url: http://lafmad.github.io/
-author: lafmad
 pygments: true
-paginate: 24
+permalink: /:year/:month/:day/:title.html
+name: "[shutter release]"
+markdown: rdiscount
