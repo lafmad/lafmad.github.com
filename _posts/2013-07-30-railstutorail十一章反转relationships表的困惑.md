@@ -1,14 +1,15 @@
 ---
 title: 第十一章困惑 外键 及 反转relationships表
 layout: post
-guid: urn:uuid:
+guid: urn:uuid:7ef37791-dd7e-49b5-a490-346912ab3f1b
 tags:
   - rails
   - railstutorail 学习笔记
 ---
 
 
-还是简书漂亮[简书版](http://jianshu.io/p/d4AcLx)
+[简书版](http://jianshu.io/p/d4AcLx)
+
 
 不知道有谁学到11章时和我一样困惑的，所谓的对调两列的位置，组建成reverse_ralationships表究竟是什么意思。毕竟表根本没变就是原来那个表阿，已经完整的体现了用户间关系。谁是关注谁是被关注根本没变，追人的没突然变成被追啊，携带信息完全一样。
 

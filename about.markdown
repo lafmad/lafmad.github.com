@@ -5,18 +5,18 @@ layout: page
 
 a
 
-> Minimalist | Appleist | Unixer | Coder
+> dreamer
 
 who involved in 
 
-> [github](https://github.com/waynezhang)
+> [github](https://github.com/lafmad)
 
 mail 
 
-> echo srvpqxfbyqfvpdtkbjwt | tr yxwvtsrqpkjfdb zuonmlihgeca@.
+> [gmail]
 
 or follow 
 
-> [@o_lll](https://twitter.com/#!/o_lll)
+> [@lafmad](https://twitter.com/lafmad)
 
 to reach me
