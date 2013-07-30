@@ -15,16 +15,19 @@ tags:
 
 没错，真相就是：**其实表就是原来的表，根本没变。表没有反转，反转的是外键，从而反转查询方向。因为Users表和relationships表通过外键一一对应，所以把表重命是为了另设外键。根本就没有任何将表进行反转的处理**。你把User.rb中的reverse_relationships 都改成 same_relationships 试试，结果一样。取名reverse, 其实是外键和查询方向的reverse。
 
+
+
+***
 ##先说外键
+***
 
-
-**第十章的user.microposts比较简单, 生成micropost时无须指定外键，因为micopost 模型中就是user_id，只要正确定义了用户和微博之间的关联关系（has_many,belongs_to）,使用user.microposts.build创建新微薄时，rails 会自动将micropost中的user_id赋值为相应的user.id。**
+#第十章的user.microposts比较简单, 生成micropost时无须指定外键，因为micopost 模型中就是user_id，只要正确定义了用户和微博之间的关联关系（has_many,belongs_to）,使用user.microposts.build创建新微薄时，rails 会自动将micropost中的user_id赋值为相应的user.id。**
 
 
 
 >运行验证一下，rails console --sandbox:  
 `1.9.3-p429 :001 > User.first.microposts.build`  
-会新建一个micropost，micropost的user_id属性自动赋值为 user.id （此例为User.first.id="1"），其他属性为nil，待给参数  
+**会新建一个micropost，micropost的user_id属性自动赋值为 user.id （此例为User.first.id="1"），其他属性为nil，待给参数**  
 `User Load (0.5ms)  SELECT "users".* FROM "users" LIMIT 1`  
 `=> #<Micropost id: nil, content: nil, user_id: 1, created_at: nil, updated_at: nil> `  
 
@@ -126,7 +129,7 @@ user.followed_users 通过relationships表将 follower_id =(user.id) 所有对�
 写完了我是明白多一点了，如果有读者的话，希望没把你搞的更糊涂。文章是以肯定的语气写的，因为我电脑上它确实是这么运行的，但也有可能在错误的解释正确的结果。  
 
 
-沉住气，也许忽然间一回头就明白了（然后又糊涂了，然后又明白了，嗯嗯，就是这样）。
+沉住气，也许忽然间一回头就明白了（然后又糊涂了，然后又明白了，嗯嗯，就是这样)。  
 
 
 
