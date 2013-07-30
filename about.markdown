@@ -11,9 +11,9 @@ who involved in
 
 > [github](https://github.com/lafmad)
 
-mail 
+douban
 
-> [gmail]
+> [douban](http://www.douban.com/people/toberealme/)
 
 or follow 
 
