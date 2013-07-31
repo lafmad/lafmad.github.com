@@ -1,5 +1,4 @@
 ---
-title: lafmad
 layout: page
 ---
 
