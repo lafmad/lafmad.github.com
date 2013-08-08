@@ -180,6 +180,7 @@ to auto.
 
 
 ###Padding, border, and margins
+<br>
 
 ####A two-minute guide to borders
 * border-style: groove;等共八种
@@ -295,7 +296,7 @@ Liquid and frozen designs:整个body下是一个包含所有其他元素的div�
 margin-left: auto;  
 margin-right: auto;  
 
-###绝对位置布局 The Absolute Layout
+####绝对位置布局 The Absolute Layout
 >By setting the sidebar to a specific width, and positioning it
 to the right of the main content, we have a main content area that
 expands and contracts with the size of the page, and a sidebar that
@@ -305,25 +306,25 @@ part of your page to be fixed in size and one part to expand and
 contract, or when you need an element to be located at a precise
 location 
 
-###css表格布局 CSS table display ：
+####css表格布局 CSS table display ：
 P513 逻辑包含图：  
 div table;(display: table;)  
 table其下是div Row;(display: table-row;)  
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
->&lt;div id="tableContainer">  
-  &lt;div id="tableRow">  
-   &lt;div id="main">  
-    ...
-   &lt;/div>  
-   &lt;div id="sidebar">  
-    ...
-   &lt;/div>  
-  &lt;/div>  
- &lt;/div>  
+>`&lt;div id="tableContainer">`  
+  `&lt;div id="tableRow">`  
+   `&lt;div id="main">`  
+    /...
+   `&lt;/div>`  
+   `&lt;div id="sidebar">`  
+    /...
+   `&lt;/div>`  
+ `&lt;/div>`  
+`&lt;/div>`
 
-### Position
+### Position 
 
 1. abusolute 相对页面定位  
 the flowed elements don’t know about the absolutely positioned elements at all, so the inline content in the flowed elements doesn’t wrap around the absolutely positioned elements.
@@ -383,6 +384,8 @@ url input:    &lt;input type="url">
 2. 提交submit input: &lt;input type="submit">  
 
 3. 选择  
+
+
 * radio input:  &lt;input type="radio" name="hotornot" value="hot">&lt;input type="radio" name="hotornot" value="not">  
 * checkbox input:  
 >&lt;input type="checkbox" name="spice" value="Salt">  
@@ -424,13 +427,13 @@ url input:    &lt;input type="url">
 1. post是浏览器将你表单作为request一部分发送，用户不可见
 2. get是将表单信息作为URL一部分，再发起request。
 
-为啥提交信息也叫GET。  
+####为啥提交信息也叫GET。  
 Q:Why is it called GET if we’re sending something to the server?  
 A: Good question. What’s the main job of a browser? To get web pages from a server. And when you are using GET, the browser is just going about getting a web page in the normal way it always does, except that, in the case of a form, it has appended some
 more data to the end of the URL. Other than that, the browser just acts like it’s a normal request. 
 With POST, on the other hand, the browser actually creates a little data package and sends it to the server.
 
-什么时候用GET，什么时候用POST  
+####什么时候用GET，什么时候用POST  
 Q:So why would I use POST over GET, or vice versa?  
 A：1.如果你需要用户能够bookmark提交表单后的页面，用GET。比如bookmark返回的搜索结果，下次直接能看到，不用重新提交表单。（因为bookmard的当前url里面已经包含所有表单信息了）  
 2.安全用Post  
@@ -439,10 +442,10 @@ A：1.如果你需要用户能够bookmark提交表单后的页面，用GET。比
 ***
 ## 附录：10个未包含的话题 （Appendix: leftovers /The Top Ten Topics(We Didn’t Cover)）
 
-1.  More CSS selectors  
+1.  **More CSS selectors**  
 <http://www.w3school.com.cn/cssref/css_selectors.asp>
 
-2. Vendor-specific CSS properties  
+2. **Vendor-specific CSS properties**  
 例子：  
 >div {  
 transform: rotate(45deg);  
@@ -452,26 +455,26 @@ transform: rotate(45deg);
 -ms-transform: rotate(45deg);  
 }
 
-3. CSS transforms and transitions  
+3. **CSS transforms and transitions**  
 通过box 和 box:hover 使图形翻转
 
-4. Interactivity  
+4. **Interactivity**  
 包含js，的交互
 
-5. HTML5 APIs and web apps  
+5. **HTML5 APIs and web apps**  
  HTML5 comes with a whole new set of application programming interfaces (APIs for short) that are accessible through JavaScript.  
  These APIs open up a whole new universe of expression and functionality to your web pages. 
 
-6. More on Web Fonts
+6. **More on Web Fonts**
 
-7. Tools for creating web pages
+7. **Tools for creating web pages**
 
-8. XHTML5
+8. **XHTML5**
 
-9. Server-side scripting  
+9. **Server-side scripting**  
 Web languages are constantly evolving; PHP, Python, Perl, Node.js, Ruby on Rails, and JavaServer Pages (JSPs) are all commonly used
 
-10. Audio  
+10. **Audio**  
 类似&lt;video>  
 >&lt;audio src="song.mp3" id="boombox" controls>  
 Sorry but audio is not supported in your browser.

@@ -180,6 +180,7 @@ to auto.
 
 
 ###Padding, border, and margins
+<br>
 
 ####A two-minute guide to borders
 * border-style: groove;等共八种
@@ -295,7 +296,7 @@ Liquid and frozen designs:整个body下是一个包含所有其他元素的div�
 margin-left: auto;  
 margin-right: auto;  
 
-###绝对位置布局 The Absolute Layout
+####绝对位置布局 The Absolute Layout
 >By setting the sidebar to a specific width, and positioning it
 to the right of the main content, we have a main content area that
 expands and contracts with the size of the page, and a sidebar that
@@ -305,25 +306,25 @@ part of your page to be fixed in size and one part to expand and
 contract, or when you need an element to be located at a precise
 location 
 
-###css表格布局 CSS table display ：
+####css表格布局 CSS table display ：
 P513 逻辑包含图：  
 div table;(display: table;)  
 table其下是div Row;(display: table-row;)  
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
->&lt;div id="tableContainer">  
-  &lt;div id="tableRow">  
-   &lt;div id="main">  
-    ...
-   &lt;/div>  
-   &lt;div id="sidebar">  
-    ...
-   &lt;/div>  
-  &lt;/div>  
- &lt;/div>  
+>`&lt;div id="tableContainer">`  
+  `&lt;div id="tableRow">`  
+   `&lt;div id="main">`  
+    /...
+   `&lt;/div>`  
+   `&lt;div id="sidebar">`  
+    /...
+   `&lt;/div>`  
+ `&lt;/div>`  
+`&lt;/div>`
 
-### Position
+### Position 
 
 1. abusolute 相对页面定位  
 the flowed elements don’t know about the absolutely positioned elements at all, so the inline content in the flowed elements doesn’t wrap around the absolutely positioned elements.
@@ -383,6 +384,8 @@ url input:    &lt;input type="url">
 2. 提交submit input: &lt;input type="submit">  
 
 3. 选择  
+
+
 * radio input:  &lt;input type="radio" name="hotornot" value="hot">&lt;input type="radio" name="hotornot" value="not">  
 * checkbox input:  
 >&lt;input type="checkbox" name="spice" value="Salt">  
