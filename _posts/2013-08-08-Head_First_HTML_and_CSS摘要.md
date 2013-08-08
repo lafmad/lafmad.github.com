@@ -87,7 +87,7 @@ you’re still downloading the full-size image,and making the browser do the wor
 <br>
 ###Getting CSS into your HTML:
 1. &lt;style>&lt;/style>
-2. &lt;link type="text/css" rel="stylesheet" href="lounge.css">
+2. &lt;link type="text/css" rel="stylesheet" href="lounge.css">  
 
 ###The world’s smallest and fastest guide to how styles are applied
 1. First, do any selectors select your element?
@@ -118,7 +118,7 @@ The font-family property gives you a way to create a list of preferred fonts.
 #### How Web Fonts work
 1. the browser first retrieves an HTML page that references them
 2. The browser then retrieves the Web Font files needed for the page.
-3. ith the font retrieved, the browser uses the font when it displays the page.
+3. ith the font retrieved, the browser uses the font when it displays the page.  
 
 #### How to add a Web Font to your page...
 P325 
@@ -175,7 +175,7 @@ A:You can specify an actual size— usually in pixels—or you can specify a per
 高度应默认，否则content会溢出至其他元素  
 Q:What about the height?  
 A:In general, the height of an element is left at the default, which is auto, and the browser expands the content area vertically so all of the content is visible. You can explicitly set a height, but you risk having the bottom of your content overflow into other elements if your height isn’t big enough to contain it. In general, leave your element heights unspecified so they default
-to auto.
+to auto.  
 
 
 
@@ -186,7 +186,7 @@ to auto.
 * border-style: groove;等共八种
 * border-width: thin;medium;thick  或 px
 * border-color:
-* border-radius: 15px;  具体 border-top-left-radius: 3em;
+* border-radius: 15px;  具体 border-top-left-radius: 3em;  
 
 #### id vs class
 > Why do I need an id just to prove something is unique on the page? I could use a class exactly the same way, right?  
@@ -210,7 +210,7 @@ margin-right: 30px;
 ###Let’s explore how we can divide a page into logical sections
 1. Identifying your logical sections 
 2. Using div s to mark sections
-3. Labeling the divs
+3. Labeling the divs  
 
 ### test-align: center; 对div子block元素中content影响
 >All the text inside the &lt;div>
@@ -228,7 +228,7 @@ to center.
 
 **line-height**: 1;  
 对每一级line-height都是 1 times its own font size;  
-
+<br>
 ### 盒子模型设定的shortcut P442
 >Q:Should I always use shorthand? 简写必要么？
 A:Not necessarily. Some people find the long form more
@@ -241,7 +241,7 @@ form is more comfortable because they are both perfectly valid.
 
 ### span 与 strong的不同用处
 Q:When do I use a &lt;span> rather  than another inline element like &lt;em> or  &lt;strong>?   
-A:(mark up your content) VS (to change the style of certain words)
+A:(mark up your content) VS (to change the style of certain words)  
 
 ###什么是 行内元素，我可以给行内元素设定 宽度 等属性么
 Q:Can I set properties like width on &lt;span> elements? Actually, what about **inline elements** in general?
@@ -254,7 +254,7 @@ you can’t edit the image yourself to change the dimensions, and you want the i
 a:link,a:visited, and even a:hover all allow you to specify style, just like they were classes. So, those are pseudo-classes. In other words, you can style pseudo-classes, but no one ever types them into their HTML.
 
 2. 怎么实现的？  
-The browser goes through and adds all your &lt;a> elements to the right pseudo-classes.
+The browser goes through and adds all your &lt;a> elements to the right pseudo-classes.  
 
 ###关于“层级"样式表 talk about the “cascade”? P457
 1. Gather all your stylesheets together.
@@ -281,7 +281,7 @@ text is a special case of an inline element. The browser breaks it into inline e
 2. give it a width
 3. float it  
 漂浮的元素不再属于正常流，其下是正常流的block元素，但这些block元素中的inline元素会知道漂浮元素的边界，在其周围flow
-
+<br>
 
 ###布局 CSS layout toolbox
 <br>
@@ -291,7 +291,7 @@ text is a special case of an inline element. The browser breaks it into inline e
 main margin-right 算好距离；  
 footer clear:right;
 
-**改进为 The Jello Layout** 布局(页面居中，浏览器左右留白)
+*改进为 The Jello Layout* 布局(页面居中，浏览器左右留白)
 Liquid and frozen designs:整个body下是一个包含所有其他元素的div，并给定宽度；  
 margin-left: auto;  
 margin-right: auto;  
@@ -313,16 +313,16 @@ table其下是div Row;(display: table-row;)
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
->`&lt;div id="tableContainer">`  
-  `&lt;div id="tableRow">`  
-   `&lt;div id="main">`  
-    /...
-   `&lt;/div>`  
-   `&lt;div id="sidebar">`  
-    /...
-   `&lt;/div>`  
- `&lt;/div>`  
-`&lt;/div>`
+        &lt;div id="tableContainer">  
+         &lt;div id="tableRow">  
+          &lt;div id="main">  
+            ...
+          &lt;/div>  
+          &lt;div id="sidebar">  
+            ...
+          &lt;/div>  
+         &lt;/div>  
+        &lt;/div>
 
 ### Position 
 
@@ -386,52 +386,59 @@ url input:    &lt;input type="url">
 3. 选择  
 
 
-* radio input:  &lt;input type="radio" name="hotornot" value="hot">&lt;input type="radio" name="hotornot" value="not">  
-* checkbox input:  
+1 radio input:  &lt;input type="radio" name="hotornot" value="hot">&lt;input type="radio" name="hotornot" value="not">  
+
+2 checkbox input:  
 >&lt;input type="checkbox" name="spice" value="Salt">  
 &lt;input type="checkbox" name="spice" value="Pepper">  
 &lt;input type="checkbox" name="spice" value="Garlic">  
-* 下拉选择框 select:  
+
+3 下拉选择框 select:  
 &lt;select name="characters">  
   &lt;option value="Jersey">New Jersey&lt;/option>  
   &lt;option value="John">John Parker&lt;/option>  
 &lt;/select>  
-* Number input: &lt;input type="number" min="0" max="20"> 数字框  
-* range input： &lt;input type="range" min="0" max="20" step="5">  滑动条  
-* color input:  &lt;input type="color">  
-* date input:   &lt;input type="date">  
 
-例子：
->&lt;form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
-（这个action，就是提交的表单的去向，由该文件处理）  
-&lt;p>  
- Choose your beans:  
-  &lt;select name="beans">  
-  &lt;option value="Guatemala">Organic Guatemala&lt;/option>  
-  &lt;option value="Kenya">Kenya&lt;/option>  
-  &lt;/select>  
-&lt;/p>
+4 Number input: &lt;input type="number" min="0" max="20"> 数字框  
 
-  &lt;p>Ship to: &lt;br>  
-   Name: &lt;input type="text" name="name"> &lt;br>  
-   Address: &lt;input type="text" name="address"> &lt;br>  
-   Phone: &lt;input type="tel" name="phone"> &lt;br>  
-  &lt;/p>
+5 range input： &lt;input type="range" min="0" max="20" step="5">  滑动条  
 
-  &lt;p>  
-   &lt;input type="submit" value="Order Now">  
-  &lt;/p>  
-&lt;/form>  
+6 color input:  &lt;input type="color">  
+
+7 date input:   &lt;input type="date">  
+
+表单例子：
+        &lt;form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
+        （这个action，就是提交的表单的去向，由该文件处理）  
+         &lt;p>  
+         Choose your beans:  
+         &lt;select name="beans">  
+         &lt;option value="Guatemala">Organic Guatemala&lt;/option>  
+         &lt;option value="Kenya">Kenya&lt;/option>  
+         &lt;/select>  
+         &lt;/p>
+
+         &lt;p>Ship to: &lt;br>  
+         Name: &lt;input type="text" name="name"> &lt;br>  
+         Address: &lt;input type="text" name="address"> &lt;br>  
+         Phone: &lt;input type="tel" name="phone"> &lt;br>  
+         &lt;/p>
+
+         &lt;p>  
+         &lt;input type="submit" value="Order Now">  
+         &lt;/p>  
+        &lt;/form>  
 
 ### Post 和 Get 的区别
 1. post是浏览器将你表单作为request一部分发送，用户不可见
-2. get是将表单信息作为URL一部分，再发起request。
+2. get是将表单信息作为URL一部分，再发起request。  
 
+<br>
 ####为啥提交信息也叫GET。  
 Q:Why is it called GET if we’re sending something to the server?  
 A: Good question. What’s the main job of a browser? To get web pages from a server. And when you are using GET, the browser is just going about getting a web page in the normal way it always does, except that, in the case of a form, it has appended some
 more data to the end of the URL. Other than that, the browser just acts like it’s a normal request. 
-With POST, on the other hand, the browser actually creates a little data package and sends it to the server.
+With POST, on the other hand, the browser actually creates a little data package and sends it to the server.  
 
 ####什么时候用GET，什么时候用POST  
 Q:So why would I use POST over GET, or vice versa?  
