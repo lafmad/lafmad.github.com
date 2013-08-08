@@ -4,7 +4,7 @@ layout: post
 guid: urn:uuid:7ef37791-dd7e-49b5-a490-346912ab3f1b
 tags:
   - rails
-  - railstutorail 学习笔记
+  - 程序
 ---
 
 
