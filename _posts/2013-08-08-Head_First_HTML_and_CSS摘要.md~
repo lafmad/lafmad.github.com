@@ -410,23 +410,23 @@ url input:    &lt;input type="url">
 表单例子：
         &lt;form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
         （这个action，就是提交的表单的去向，由该文件处理）  
-        &lt;p>  
-        Choose your beans:  
-        &lt;select name="beans">  
-        &lt;option value="Guatemala">Organic Guatemala&lt;/option>  
-        &lt;option value="Kenya">Kenya&lt;/option>  
-        &lt;/select>  
-        &lt;/p>
+         &lt;p>  
+         Choose your beans:  
+         &lt;select name="beans">  
+         &lt;option value="Guatemala">Organic Guatemala&lt;/option>  
+         &lt;option value="Kenya">Kenya&lt;/option>  
+         &lt;/select>  
+         &lt;/p>
 
-        &lt;p>Ship to: &lt;br>  
-        Name: &lt;input type="text" name="name"> &lt;br>  
-        Address: &lt;input type="text" name="address"> &lt;br>  
-        Phone: &lt;input type="tel" name="phone"> &lt;br>  
-        &lt;/p>
+         &lt;p>Ship to: &lt;br>  
+         Name: &lt;input type="text" name="name"> &lt;br>  
+         Address: &lt;input type="text" name="address"> &lt;br>  
+         Phone: &lt;input type="tel" name="phone"> &lt;br>  
+         &lt;/p>
 
-        &lt;p>  
-        &lt;input type="submit" value="Order Now">  
-        &lt;/p>  
+         &lt;p>  
+         &lt;input type="submit" value="Order Now">  
+         &lt;/p>  
         &lt;/form>  
 
 ### Post 和 Get 的区别

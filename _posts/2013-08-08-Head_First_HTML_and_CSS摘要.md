@@ -313,16 +313,16 @@ table其下是div Row;(display: table-row;)
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
-        &lt;div id="tableContainer">  
-         &lt;div id="tableRow">  
-          &lt;div id="main">  
+        <div id="tableContainer">  
+         <div id="tableRow">  
+          <div id="main">  
             ...
-          &lt;/div>  
-          &lt;div id="sidebar">  
+          </div>  
+          <div id="sidebar">  
             ...
-          &lt;/div>  
-         &lt;/div>  
-        &lt;/div>
+          </div>  
+         </div>  
+        </div>
 
 ### Position 
 
@@ -408,26 +408,26 @@ url input:    &lt;input type="url">
 7 date input:   &lt;input type="date">  
 
 表单例子：
-        &lt;form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
+        <form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
         （这个action，就是提交的表单的去向，由该文件处理）  
-         &lt;p>  
-         Choose your beans:  
-         &lt;select name="beans">  
-         &lt;option value="Guatemala">Organic Guatemala&lt;/option>  
-         &lt;option value="Kenya">Kenya&lt;/option>  
-         &lt;/select>  
-         &lt;/p>
+         <p>  
+          Choose your beans:  
+          <select name="beans">  
+          <option value="Guatemala">Organic Guatemala&lt;/option>  
+          <option value="Kenya">Kenya&lt;/option>  
+          </select>  
+         </p>
 
-         &lt;p>Ship to: &lt;br>  
+         <p>Ship to: &lt;br>  
          Name: &lt;input type="text" name="name"> &lt;br>  
          Address: &lt;input type="text" name="address"> &lt;br>  
          Phone: &lt;input type="tel" name="phone"> &lt;br>  
-         &lt;/p>
+         </p>
 
-         &lt;p>  
-         &lt;input type="submit" value="Order Now">  
-         &lt;/p>  
-        &lt;/form>  
+         <p>  
+         <input type="submit" value="Order Now">  
+         </p>  
+        </form>  
 
 ### Post 和 Get 的区别
 1. post是浏览器将你表单作为request一部分发送，用户不可见
