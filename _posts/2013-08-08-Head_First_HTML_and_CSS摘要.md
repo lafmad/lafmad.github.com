@@ -313,7 +313,7 @@ table其下是div Row;(display: table-row;)
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
->       <div id="tableContainer">  
+>       &lt;div id="tableContainer">  
        <div id="tableRow">  
         <div id="main">  
          ...
@@ -408,7 +408,7 @@ url input:    &lt;input type="url">
 7 date input:   &lt;input type="date">  
 
 表单例子：
->        <form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
+>        &lt;form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">  
     （这个action，就是提交的表单的去向，由该文件处理）  
      <p>  
       Choose your beans:  
@@ -417,10 +417,10 @@ url input:    &lt;input type="url">
       <option value="Kenya">Kenya&lt;/option>  
       </select>  
      </p>
-     <p>Ship to: &lt;br>  
-     Name: <input type="text" name="name"> &lt;br>  
-     Address: <input type="text" name="address"> &lt;br>  
-     Phone: <input type="tel" name="phone"> &lt;br>  
+     <p>Ship to: <br>  
+     Name: <input type="text" name="name"><br>  
+     Address: <input type="text" name="address"><br>  
+     Phone: <input type="tel" name="phone"> <br>  
      </p>
      <p>  
      <input type="submit" value="Order Now">  

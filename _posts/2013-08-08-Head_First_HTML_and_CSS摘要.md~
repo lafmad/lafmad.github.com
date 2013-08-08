@@ -313,14 +313,14 @@ table其下是div Row;(display: table-row;)
 Row  其下是div column;(display: table-cell;)（vertical-align: top;）  
 （You can set the width of each column By using percentages ）  
 
->       <div id="tableContainer">  
-     <div id="tableRow">  
-      <div id="main">  
+>       &lt;div id="tableContainer">  
+       <div id="tableRow">  
+        <div id="main">  
+         ...
+        </div>  
+        <div id="sidebar">  
         ...
-      </div>  
-      <div id="sidebar">  
-        ...
-      </div>  
+        </div>  
       </div>  
     </div>
 
