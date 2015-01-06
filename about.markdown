@@ -9,14 +9,10 @@ a
 
 who involved in 
 
-> [github](https://github.com/lafmad)
-
 douban
 
 > [douban](http://www.douban.com/people/toberealme/)
 
-or follow 
+reach me
 
-> [@lafmad](https://twitter.com/lafmad)
-
-to reach me
+> <inaircastle@gmail.com>
